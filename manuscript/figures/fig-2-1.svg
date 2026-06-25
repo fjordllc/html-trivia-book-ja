@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" role="img" aria-labelledby="title desc">
+  <title id="title">図 2-1 URL・HTTP・HTML の分業</title>
+  <desc id="desc">URL は場所、HTTP は取得方法、HTML は中身の構造という、それぞれ別の問いに答える 3 つの役割を並べた図。</desc>
+  <rect width="920" height="300" fill="#ffffff"/>
+  <style>
+    .head { font: 600 19px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0f172a; }
+    .big  { font: 700 22px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0369a1; }
+    .q    { font: 600 16px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #1f2937; }
+    .ex   { font: 500 13px ui-monospace, Menlo, Consolas, monospace; fill: #475569; }
+  </style>
+  <text x="40" y="40" class="head">図 2-1　URL・HTTP・HTML は、それぞれ別の問いに答える。</text>
+
+  <rect x="40"  y="70" width="260" height="180" rx="14" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="330" y="70" width="260" height="180" rx="14" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="620" y="70" width="260" height="180" rx="14" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+
+  <text x="170" y="118" class="big" text-anchor="middle">URL</text>
+  <text x="460" y="118" class="big" text-anchor="middle">HTTP</text>
+  <text x="750" y="118" class="big" text-anchor="middle">HTML</text>
+
+  <text x="170" y="160" class="q" text-anchor="middle">どこにあるか</text>
+  <text x="460" y="160" class="q" text-anchor="middle">どう取りに行くか</text>
+  <text x="750" y="160" class="q" text-anchor="middle">中身はどんな構造か</text>
+
+  <text x="170" y="206" class="ex" text-anchor="middle">/beam-status.html</text>
+  <text x="460" y="206" class="ex" text-anchor="middle">GET /...</text>
+  <text x="750" y="206" class="ex" text-anchor="middle">&lt;a href="..."&gt;</text>
+
+  <text x="170" y="230" class="ex" text-anchor="middle" fill="#64748b">場所の名前</text>
+  <text x="460" y="230" class="ex" text-anchor="middle" fill="#64748b">取得の手順</text>
+  <text x="750" y="230" class="ex" text-anchor="middle" fill="#64748b">参照・見出し・本文</text>
+</svg>
