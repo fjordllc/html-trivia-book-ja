@@ -1,0 +1,15 @@
+/* 書籍固有の上書きが必要になったときはこのファイルに追加する。 */
+
+/* 全ページ共通フッター（textbook-footer.js が各ページに挿入する） */
+.textbook-footer {
+  margin-block: 6rem -4rem;
+  padding-block: 4rem 3rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  font-size: 0.85em;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.textbook-footer a {
+  text-decoration: underline;
+}

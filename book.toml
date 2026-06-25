@@ -1,0 +1,13 @@
+[book]
+authors = ["FjordBootCamp"]
+language = "ja"
+multilingual = false
+src = "manuscript"
+title = "FBC Press: 仕事に役立たない HTML の雑学"
+
+[build]
+build-dir = "book"
+
+[output.html]
+additional-css = ["theme/mdbook-book-jp.css", "theme/html-trivia-book.css"]
+additional-js = ["theme/textbook-footer.js"]
