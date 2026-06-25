@@ -45,4 +45,5 @@
   - [付録A 明日話したくなるHTML雑学50](appendix/a.md)
   - [付録B HTML人物列伝](appendix/b.md)
   - [付録C HTML都市伝説](appendix/c.md)
+  - [付録D 番外編 もっと深い HTML 雑学](appendix/d.md)
   - [あとがき](appendix/afterword.md)
