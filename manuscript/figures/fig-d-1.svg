@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-labelledby="title desc">
+  <title id="title">図 D-1 表の中に置けないテキストは表の前へ追い出される</title>
+  <desc id="desc">table の直下に書いたテキストが、DOM では table の中ではなく table の直前へ移動する foster parenting を示す図。</desc>
+  <rect width="920" height="320" fill="#ffffff"/>
+  <style>
+    .head { font: 600 19px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0f172a; }
+    .cap  { font: 600 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #334155; }
+    .code { font: 500 14px ui-monospace, Menlo, Consolas, monospace; fill: #1f2937; }
+    .node { font: 600 14px ui-monospace, Menlo, Consolas, monospace; fill: #0369a1; }
+    .out  { font: 600 13px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #b45309; }
+    .arrow{ stroke: #0284c7; stroke-width: 2.5; fill: none; }
+    .tline{ stroke: #94a3b8; stroke-width: 1.5; }
+  </style>
+  <text x="40" y="40" class="head">図 D-1　表の中に置けないテキストは、表の前へ追い出される。</text>
+
+  <text x="40" y="84" class="cap">ソース</text>
+  <rect x="40" y="96" width="330" height="96" rx="12" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="58" y="134" class="code">&lt;table&gt;<tspan fill="#b45309">おっと</tspan>&lt;tr&gt;</text>
+  <text x="74" y="160" class="code">&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+
+  <path d="M390 144 H470" class="arrow" marker-end="url(#ahd)"/>
+  <text x="430" y="132" class="cap" text-anchor="middle" fill="#0284c7">解釈</text>
+  <defs>
+    <marker id="ahd" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <text x="500" y="84" class="cap">DOM</text>
+  <rect x="500" y="96" width="380" height="200" rx="12" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="520" y="116" width="150" height="28" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="534" y="135" class="code" fill="#b45309">"おっと"</text>
+  <text x="690" y="135" class="out">← 表の外（前）へ</text>
+  <text x="520" y="178" class="node">table</text>
+  <line x1="534" y1="186" x2="560" y2="208" class="tline"/>
+  <text x="560" y="226" class="node">tbody</text>
+  <line x1="576" y1="234" x2="600" y2="256" class="tline"/>
+  <text x="600" y="274" class="node">tr › td › "A"</text>
+</svg>

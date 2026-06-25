@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="340" viewBox="0 0 920 340" role="img" aria-labelledby="title desc">
+  <title id="title">図 24-1 HTML を読むのはブラウザだけではない</title>
+  <desc id="desc">1 つの HTML 文書を、ブラウザ・検索エンジン・スクリーンリーダー・SNS のカード生成・翻訳や保存ツールが、それぞれ構造と意味を頼りに読むことを示す図。</desc>
+  <rect width="920" height="340" fill="#ffffff"/>
+  <style>
+    .head { font: 600 19px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0f172a; }
+    .big  { font: 700 18px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0369a1; }
+    .ev   { font: 600 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #1f2937; }
+    .arrow{ stroke: #0284c7; stroke-width: 2; fill: none; }
+  </style>
+  <text x="40" y="40" class="head">図 24-1　同じ HTML を、いろいろな読み手が構造から読む。</text>
+
+  <rect x="40" y="110" width="220" height="120" rx="14" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="150" y="160" class="big" text-anchor="middle">HTML 文書</text>
+  <text x="150" y="188" class="ev" text-anchor="middle" fill="#64748b">構造・意味の手がかり</text>
+
+  <defs>
+    <marker id="ah24" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <path d="M260 140 H560" class="arrow" marker-end="url(#ah24)"/>
+  <path d="M260 160 H560" class="arrow" marker-end="url(#ah24)"/>
+  <path d="M260 180 H560" class="arrow" marker-end="url(#ah24)"/>
+  <path d="M260 200 H560" class="arrow" marker-end="url(#ah24)"/>
+  <path d="M260 220 H560" class="arrow" marker-end="url(#ah24)"/>
+
+  <rect x="570" y="70"  width="310" height="40" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="590" y="96" class="ev">ブラウザ（画面に表示）</text>
+  <rect x="570" y="120" width="310" height="40" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="590" y="146" class="ev">検索エンジン（主題を推定）</text>
+  <rect x="570" y="170" width="310" height="40" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="590" y="196" class="ev">スクリーンリーダー（読み上げ）</text>
+  <rect x="570" y="220" width="310" height="40" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="590" y="246" class="ev">SNS（カードを生成）</text>
+  <rect x="570" y="270" width="310" height="40" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="590" y="296" class="ev">翻訳・保存・リーダーモード</text>
+</svg>
