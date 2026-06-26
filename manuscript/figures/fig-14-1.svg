@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-labelledby="title desc">
+  <title id="title">図 14-1 壊れた入力への二つの態度</title>
+  <desc id="desc">同じ壊れた入力に対し、HTML は回復して文書を表示し、XML として扱う XHTML は処理を止めてエラー画面を出す、という対比の図。</desc>
+  <rect width="920" height="320" fill="#ffffff"/>
+  <style>
+    .head { font: 600 19px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0f172a; }
+    .col  { font: 700 18px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0369a1; }
+    .ev   { font: 600 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #1f2937; }
+    .ok   { font: 700 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #047857; }
+    .ng   { font: 700 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #b91c1c; }
+    .code { font: 500 13px ui-monospace, Menlo, Consolas, monospace; fill: #334155; }
+    .arrow{ stroke: #64748b; stroke-width: 2; fill: none; }
+  </style>
+  <text x="40" y="40" class="head">図 14-1　同じ壊れた入力でも、HTML は回復し、XML は止まる。</text>
+
+  <!-- shared input -->
+  <text x="40" y="78" class="ev">壊れた入力（閉じ忘れ）</text>
+  <rect x="40" y="90" width="220" height="60" rx="10" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="56" y="126" class="code">&lt;p&gt;前置き &lt;div&gt;本文</text>
+
+  <defs>
+    <marker id="ah14" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <path d="M270 120 H320" class="arrow" marker-end="url(#ah14)"/>
+
+  <!-- HTML column -->
+  <rect x="340" y="78" width="250" height="200" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <text x="465" y="110" class="col" text-anchor="middle">HTML</text>
+  <text x="465" y="146" class="ev" text-anchor="middle">回復して読み進める</text>
+  <text x="465" y="172" class="code" text-anchor="middle">div の手前で p を閉じる</text>
+  <text x="465" y="226" class="ok" text-anchor="middle">○ 文書は表示される</text>
+  <text x="465" y="252" class="code" text-anchor="middle">閲覧を止めない</text>
+
+  <!-- XML column -->
+  <rect x="620" y="78" width="250" height="200" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="745" y="110" class="col" text-anchor="middle" fill="#b91c1c">XHTML（XML）</text>
+  <text x="745" y="146" class="ev" text-anchor="middle">不正なら処理を止める</text>
+  <text x="745" y="172" class="code" text-anchor="middle">回復しない</text>
+  <text x="745" y="226" class="ng" text-anchor="middle">✕ ページが出ない</text>
+  <text x="745" y="252" class="code" text-anchor="middle">黄色いエラー画面</text>
+</svg>
