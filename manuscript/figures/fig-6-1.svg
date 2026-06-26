@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" role="img" aria-labelledby="title desc">
+  <title id="title">図 6-1 div が来たところで p は閉じられる</title>
+  <desc id="desc">p の中に div を書いたソースから、ブラウザが div の直前で p を閉じ、div を p の外（兄弟）に置いた DOM を作る流れを示す図。</desc>
+  <rect width="920" height="300" fill="#ffffff"/>
+  <style>
+    .head { font: 600 19px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #0f172a; }
+    .cap  { font: 600 15px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #334155; }
+    .code { font: 500 14px ui-monospace, Menlo, Consolas, monospace; fill: #1f2937; }
+    .node { font: 600 14px ui-monospace, Menlo, Consolas, monospace; fill: #0369a1; }
+    .note { font: 600 12px "Hiragino Sans", "Yu Gothic", sans-serif; fill: #b45309; }
+    .arrow{ stroke: #0284c7; stroke-width: 2.5; fill: none; }
+    .tline{ stroke: #94a3b8; stroke-width: 1.5; }
+  </style>
+  <text x="40" y="40" class="head">図 6-1　段落に置けない div が来ると、その手前で p が閉じる。</text>
+
+  <text x="40" y="84" class="cap">ソース（p を閉じていない）</text>
+  <rect x="40" y="96" width="320" height="96" rx="12" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="58" y="134" class="code">&lt;p&gt;前置き</text>
+  <text x="58" y="160" class="code">&lt;div&gt;本文&lt;/div&gt;</text>
+
+  <path d="M380 144 H460" class="arrow" marker-end="url(#ah6)"/>
+  <text x="420" y="132" class="cap" text-anchor="middle" fill="#0284c7">解釈</text>
+  <defs>
+    <marker id="ah6" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <text x="490" y="84" class="cap">DOM（p と div は兄弟）</text>
+  <rect x="490" y="96" width="390" height="150" rx="12" fill="#f8fbfe" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="520" y="134" class="node">p</text>
+  <line x1="528" y1="140" x2="556" y2="160" class="tline"/>
+  <text x="556" y="166" class="code">"前置き"</text>
+  <text x="520" y="200" class="node">div</text>
+  <line x1="532" y1="206" x2="560" y2="222" class="tline"/>
+  <text x="560" y="228" class="code">"本文"</text>
+  <text x="650" y="134" class="note">← p はここで閉じた</text>
+  <text x="650" y="200" class="note">← div は p の外へ</text>
+</svg>
