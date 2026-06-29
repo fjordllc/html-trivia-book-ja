@@ -9,5 +9,5 @@ title = "FBC Press: なぜ HTML はこうなったのか"
 build-dir = "book"
 
 [output.html]
-additional-css = ["theme/mdbook-book-jp.css", "theme/html-trivia-book.css"]
+additional-css = ["theme/mdbook-book-core.css", "theme/mdbook-book-jp.css", "theme/html-trivia-book.css"]
 additional-js = ["theme/textbook-footer.js"]
