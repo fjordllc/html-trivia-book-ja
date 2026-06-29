@@ -3,7 +3,7 @@ authors = ["FjordBootCamp"]
 language = "ja"
 multilingual = false
 src = "manuscript"
-title = "FBC Press: 仕事に役立たない HTML の雑学"
+title = "FBC Press: なぜ HTML はこうなったのか"
 
 [build]
 build-dir = "book"
