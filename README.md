@@ -2,7 +2,7 @@
 
 FBC Press 向け書籍『なぜ HTML はこうなったのか』の原稿リポジトリです。
 
-本書は、プログラミングスクール FjordBootCamp の教材として作成しています。
+本書は、プログラミングスクール [FjordBootCamp](https://bootcamp.fjord.jp/) の教材として作成しています。
 
 ## 構成
 
