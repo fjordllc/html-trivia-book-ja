@@ -19,3 +19,6 @@
 - `HTML5` は歴史的文脈に限って使い、現行仕様全体を指すときは `HTML Living Standard` または `現行の HTML 仕様` と書き分ける。
 - `DOM` は初出で `DOM（文書オブジェクトモデル）` と補足してよい。
 - `View Source` と `DevTools` は UI 上の表記としてこのまま使う。
+- 和欧間スペースは見出し・本文・キャプション・`manuscript/SUMMARY.md` を含めて統一する。
+- `HTMLは` ではなく `HTML は`、`View SourceとDevTools` ではなく `View Source と DevTools` とする。
+- ただし `第8章` `第1部` `付録A` のような番号ラベルは詰めたままにする。
