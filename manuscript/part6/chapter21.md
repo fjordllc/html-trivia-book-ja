@@ -17,7 +17,7 @@
 この第6部から第7部にかけて扱う歴史は、ざっと次のように流れます。細部はこれからの章で見ていきますが、先に全体像を持っておくと迷いません。
 
 <figure>
-<img src="../figures/fig-21-1.svg" alt="1989 年の提案から公開、img 登場と無償化、ブラウザ戦争、XHTML の挫折、HTML5、2019 年の標準一本化、現在の Living Standard までを並べた年表">
+<img src="../assets/fig-21-1.svg" alt="1989 年の提案から公開、img 登場と無償化、ブラウザ戦争、XHTML の挫折、HTML5、2019 年の標準一本化、現在の Living Standard までを並べた年表">
 <figcaption>図 21-1　HTML は完成したのではなく、調整され続けてきた。</figcaption>
 </figure>
 

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" font-family="sans-serif" role="img" aria-label="1 つの HTML 文書を、ブラウザ・検索エンジン・スクリーンリーダー・SNS のカード生成・翻訳や保存ツールがそれぞれ構造から読む様子の図">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
+<rect x="40" y="100" width="220" height="120" rx="14" fill="#dce9f2" stroke="#3a6ea5" stroke-width="1.2"/>
+<text x="150" y="150" text-anchor="middle" font-size="18" font-weight="bold" fill="#3a6ea5">HTML 文書</text>
+<text x="150" y="178" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">構造・意味の手がかり</text>
+<line x1="268" y1="160" x2="556" y2="74" stroke="#3a6ea5" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="570" y="54" width="310" height="40" rx="10" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="588" y="80" text-anchor="start" font-size="15" font-weight="normal" fill="#1f2933">ブラウザ（画面に表示）</text>
+<line x1="268" y1="160" x2="556" y2="126" stroke="#3a6ea5" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="570" y="106" width="310" height="40" rx="10" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="588" y="132" text-anchor="start" font-size="15" font-weight="normal" fill="#1f2933">検索エンジン（主題を推定）</text>
+<line x1="268" y1="160" x2="556" y2="178" stroke="#3a6ea5" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="570" y="158" width="310" height="40" rx="10" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="588" y="184" text-anchor="start" font-size="15" font-weight="normal" fill="#1f2933">スクリーンリーダー（読み上げ）</text>
+<line x1="268" y1="160" x2="556" y2="230" stroke="#3a6ea5" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="570" y="210" width="310" height="40" rx="10" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="588" y="236" text-anchor="start" font-size="15" font-weight="normal" fill="#1f2933">SNS（カードを生成）</text>
+<line x1="268" y1="160" x2="556" y2="282" stroke="#3a6ea5" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="570" y="262" width="310" height="40" rx="10" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="588" y="288" text-anchor="start" font-size="15" font-weight="normal" fill="#1f2933">翻訳・保存・リーダーモード</text>
+</svg>

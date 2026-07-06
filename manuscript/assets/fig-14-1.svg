@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="sans-serif" role="img" aria-label="同じ閉じ忘れの入力に対し、HTML は回復して文書を表示し、XML として扱う XHTML は処理を止めてエラー画面を出す対比の図">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
+<text x="40" y="50" text-anchor="start" font-size="15" font-weight="bold" fill="#1f2933">壊れた入力（閉じ忘れ）</text>
+<rect x="40" y="62" width="230" height="60" rx="10" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="56" y="98" text-anchor="start" font-size="13" font-weight="normal" fill="#52606d" font-family="ui-monospace,monospace">&lt;p&gt;前置き &lt;div&gt;本文</text>
+<line x1="280" y1="92" x2="326" y2="92" stroke="#52606d" stroke-width="2" marker-end="url(#arg)"/>
+<rect x="350" y="62" width="250" height="200" rx="14" fill="#dce9f2" stroke="#3a6ea5" stroke-width="1.2"/>
+<text x="475" y="96" text-anchor="middle" font-size="18" font-weight="bold" fill="#3a6ea5">HTML</text>
+<text x="475" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2933">回復して読み進める</text>
+<text x="475" y="158" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">div の手前で p を閉じる</text>
+<text x="475" y="214" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">○ 文書は表示される</text>
+<text x="475" y="240" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">閲覧を止めない</text>
+<rect x="630" y="62" width="250" height="200" rx="14" fill="#f6e7e9" stroke="#c9727f" stroke-width="1.2"/>
+<text x="755" y="96" text-anchor="middle" font-size="18" font-weight="bold" fill="#b23a48">XHTML（XML）</text>
+<text x="755" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2933">不正なら処理を止める</text>
+<text x="755" y="158" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">回復しない</text>
+<text x="755" y="214" text-anchor="middle" font-size="15" font-weight="bold" fill="#b23a48">✕ ページが出ない</text>
+<text x="755" y="240" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">黄色いエラー画面</text>
+</svg>

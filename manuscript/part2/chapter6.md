@@ -31,7 +31,7 @@
 つまり、`div` が現れたところで `p` は暗黙に閉じられます。`div` を段落の中に押し込んだまま読むのではなく、「ここで 1 つの文章のまとまりは終わっていたはずだ」と解釈し直しているわけです。
 
 <figure>
-<img src="../figures/fig-6-1.svg" alt="p の中に div を書いたソースから、ブラウザが div の直前で p を閉じ、div を p の外に置いた DOM を作る流れの図">
+<img src="../assets/fig-6-1.svg" alt="p の中に div を書いたソースから、ブラウザが div の直前で p を閉じ、div を p の外に置いた DOM を作る流れの図">
 <figcaption>図 6-1　段落に置けない div が来ると、その手前で p が閉じる。</figcaption>
 </figure>
 

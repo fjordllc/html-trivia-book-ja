@@ -72,7 +72,7 @@ URL を書くときも要注意です。`?a=1&b=2` をそのまま属性値に�
 **"おっと" は表の中ではなく、表の前へ追い出されます。** これは **foster parenting(里親付け)** と呼ばれる、HTML パーサーの正式な動作です。表の中に置けないものが来たとき、パーサーはそれを捨てず、表の直前へ「里子に出す」のです。
 
 <figure>
-<img src="../figures/fig-d-1.svg" alt="table の直下に書いたテキストが、DOM では table の中ではなく table の直前へ移動する様子の図">
+<img src="../assets/fig-d-1.svg" alt="table の直下に書いたテキストが、DOM では table の中ではなく table の直前へ移動する様子の図">
 <figcaption>図 D-1　表の中に置けないテキストは、表の前へ追い出される。</figcaption>
 </figure>
 

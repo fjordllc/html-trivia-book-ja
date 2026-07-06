@@ -54,7 +54,7 @@ table
 逆に言えば、`tbody` が入るのはブラウザの気分ではなく、`tr` を表の本体として収める場所が必要だからです。見た目には 1 行しかなくても、表モデル上は「本体の 1 行」です。だから本体の入れ物も同時に必要になります。
 
 <figure>
-<img src="../figures/fig-5-1.svg" alt="tbody を書いていない表のソースから、ブラウザが table と tr のあいだに tbody を補完した DOM を作る流れの図">
+<img src="../assets/fig-5-1.svg" alt="tbody を書いていない表のソースから、ブラウザが table と tr のあいだに tbody を補完した DOM を作る流れの図">
 <figcaption>図 5-1　本体行は tbody の中。書かなくてもブラウザが立ち上げる。</figcaption>
 </figure>
 

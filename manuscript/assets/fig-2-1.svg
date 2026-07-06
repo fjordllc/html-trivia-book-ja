@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" font-family="sans-serif" role="img" aria-label="URL は場所、HTTP は取得方法、HTML は中身の構造という 3 つの役割を並べた図">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
+<rect x="40" y="30" width="260" height="170" rx="14" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="170" y="82" text-anchor="middle" font-size="26" font-weight="bold" fill="#3a6ea5">URL</text>
+<text x="170" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2933">どこにあるか</text>
+<text x="170" y="152" text-anchor="middle" font-size="14" font-weight="normal" fill="#52606d" font-family="ui-monospace,monospace">/beam-status.html</text>
+<text x="170" y="180" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">場所の名前</text>
+<rect x="330" y="30" width="260" height="170" rx="14" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="460" y="82" text-anchor="middle" font-size="26" font-weight="bold" fill="#3a6ea5">HTTP</text>
+<text x="460" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2933">どう取りに行くか</text>
+<text x="460" y="152" text-anchor="middle" font-size="14" font-weight="normal" fill="#52606d" font-family="ui-monospace,monospace">GET /...</text>
+<text x="460" y="180" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">取得の手順</text>
+<rect x="620" y="30" width="260" height="170" rx="14" fill="#dce9f2" stroke="#3a6ea5" stroke-width="1.2"/>
+<text x="750" y="82" text-anchor="middle" font-size="26" font-weight="bold" fill="#3a6ea5">HTML</text>
+<text x="750" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2933">中身はどんな構造か</text>
+<text x="750" y="152" text-anchor="middle" font-size="14" font-weight="normal" fill="#52606d" font-family="ui-monospace,monospace">&lt;a href=&quot;...&quot;&gt;</text>
+<text x="750" y="180" text-anchor="middle" font-size="13" font-weight="normal" fill="#52606d">参照・見出し・本文</text>
+</svg>

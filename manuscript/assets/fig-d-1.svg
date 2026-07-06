@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" font-family="sans-serif" role="img" aria-label="table の直下に書いたテキストが、DOM では table の中ではなく table の直前へ移動する様子の図">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
+<text x="40" y="36" text-anchor="start" font-size="15" font-weight="bold" fill="#52606d">ソース</text>
+<rect x="40" y="48" width="330" height="96" rx="12" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="58" y="86" text-anchor="start" font-size="14" font-weight="normal" fill="#1f2933" font-family="ui-monospace,monospace">&lt;table&gt;おっと&lt;tr&gt;</text>
+<text x="74" y="114" text-anchor="start" font-size="14" font-weight="normal" fill="#1f2933" font-family="ui-monospace,monospace">&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+<line x1="390" y1="96" x2="466" y2="96" stroke="#3a6ea5" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="428" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a6ea5">解釈</text>
+<text x="500" y="36" text-anchor="start" font-size="15" font-weight="bold" fill="#52606d">DOM</text>
+<rect x="500" y="48" width="380" height="240" rx="12" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
+<rect x="520" y="66" width="150" height="28" rx="6" fill="#f4e9dc" stroke="#c9a26b" stroke-width="1.2"/>
+<text x="534" y="86" text-anchor="start" font-size="13" font-weight="normal" fill="#b23a48" font-family="ui-monospace,monospace">&quot;おっと&quot;</text>
+<text x="690" y="86" text-anchor="start" font-size="13" font-weight="bold" fill="#3a6ea5">← 表の外（前）へ</text>
+<text x="520" y="132" text-anchor="start" font-size="14" font-weight="bold" fill="#3a6ea5" font-family="ui-monospace,monospace">table</text>
+<line x1="536" y1="140" x2="562" y2="162" stroke="#b8c2cc" stroke-width="1.5"/>
+<text x="562" y="180" text-anchor="start" font-size="14" font-weight="bold" fill="#3a6ea5" font-family="ui-monospace,monospace">tbody</text>
+<line x1="578" y1="188" x2="602" y2="210" stroke="#b8c2cc" stroke-width="1.5"/>
+<text x="602" y="228" text-anchor="start" font-size="14" font-weight="bold" fill="#3a6ea5" font-family="ui-monospace,monospace">tr › td › &quot;A&quot;</text>
+</svg>

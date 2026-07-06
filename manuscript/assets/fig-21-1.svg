@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 250" font-family="sans-serif" role="img" aria-label="1989 年の提案から公開、img 登場と無償化、ブラウザ戦争、XHTML の挫折、HTML5、2019 年の標準一本化、現在の Living Standard までを並べた年表">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
+<rect x="40" y="30" width="860" height="190" rx="14" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
+<line x1="90" y1="130" x2="870" y2="130" stroke="#52606d" stroke-width="2"/>
+<circle cx="110" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="110" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1989</text>
+<text x="110" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">提案書</text>
+<circle cx="220" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="220" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1991</text>
+<text x="220" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">世界初サイト公開</text>
+<circle cx="350" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="350" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1993</text>
+<text x="350" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">img 登場 / 無償化</text>
+<circle cx="480" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="480" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1990s</text>
+<text x="480" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">ブラウザ戦争</text>
+<circle cx="600" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="600" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2000</text>
+<text x="600" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">XHTML（→挫折）</text>
+<circle cx="710" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="710" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2014</text>
+<text x="710" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">HTML5</text>
+<circle cx="810" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="810" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2019</text>
+<text x="810" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">標準を一本化</text>
+<circle cx="880" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
+<text x="880" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">now</text>
+<text x="880" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">Living Standard</text>
+</svg>

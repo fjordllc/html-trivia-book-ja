@@ -76,7 +76,7 @@ HTML 単体では Web になりません。しかし逆に、URL と HTTP だけ
 この分業を押さえると、「HTML は何を解決したかったのか」という問いに、少し精密に答えられます。HTML は単独で全部を解決する技術ではなく、URL と HTTP と組み合わさって、**リンク可能な文書空間**を成立させる役割を引き受けていました。
 
 <figure>
-<img src="../figures/fig-2-1.svg" alt="URL は場所、HTTP は取得方法、HTML は中身の構造という 3 つの役割を並べた図">
+<img src="../assets/fig-2-1.svg" alt="URL は場所、HTTP は取得方法、HTML は中身の構造という 3 つの役割を並べた図">
 <figcaption>図 2-1　URL・HTTP・HTML は、それぞれ別の問いに答える。</figcaption>
 </figure>
 
