@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 270" font-family="sans-serif" role="img" aria-label="p の中に div を書いたソースから、ブラウザが div の直前で p を閉じ、div を p の外に置いた DOM を作る流れの図">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 270" font-family="sans-serif" role="img" aria-label="p の終了タグを省略した HTML から、p と div が兄弟になる DOM を作る図">
 <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
-<text x="40" y="36" text-anchor="start" font-size="15" font-weight="bold" fill="#52606d">ソース（p を閉じていない）</text>
+<text x="40" y="36" text-anchor="start" font-size="15" font-weight="bold" fill="#52606d">ソース（p 終了タグを省略）</text>
 <rect x="40" y="48" width="320" height="96" rx="12" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
 <text x="58" y="88" text-anchor="start" font-size="14" font-weight="normal" fill="#1f2933" font-family="ui-monospace,monospace">&lt;p&gt;前置き</text>
 <text x="58" y="116" text-anchor="start" font-size="14" font-weight="normal" fill="#1f2933" font-family="ui-monospace,monospace">&lt;div&gt;本文&lt;/div&gt;</text>
@@ -15,5 +15,5 @@
 <line x1="534" y1="172" x2="562" y2="190" stroke="#b8c2cc" stroke-width="1.5"/>
 <text x="562" y="196" text-anchor="start" font-size="13" font-weight="normal" fill="#1f2933" font-family="ui-monospace,monospace">&quot;本文&quot;</text>
 <text x="660" y="92" text-anchor="start" font-size="13" font-weight="normal" fill="#52606d">← p はここで閉じた</text>
-<text x="660" y="166" text-anchor="start" font-size="13" font-weight="normal" fill="#52606d">← div は p の外へ</text>
+<text x="660" y="166" text-anchor="start" font-size="13" font-weight="normal" fill="#52606d">← div は p の兄弟</text>
 </svg>

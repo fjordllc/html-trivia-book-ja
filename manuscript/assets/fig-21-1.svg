@@ -1,29 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 250" font-family="sans-serif" role="img" aria-label="1989 年の提案から公開、img 登場と無償化、ブラウザ戦争、XHTML の挫折、HTML5、2019 年の標準一本化、現在の Living Standard までを並べた年表">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 350" font-family="sans-serif" role="img" aria-label="1989 年の提案から 2019 年の合意と現在の Living Standard までの年表">
 <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a6ea5"/></marker><marker id="arg" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#52606d"/></marker></defs>
-<rect x="40" y="30" width="860" height="190" rx="14" fill="#fff" stroke="#b8c2cc" stroke-width="1.2"/>
-<line x1="90" y1="130" x2="870" y2="130" stroke="#52606d" stroke-width="2"/>
-<circle cx="110" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="110" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1989</text>
-<text x="110" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">提案書</text>
-<circle cx="220" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="220" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1991</text>
-<text x="220" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">世界初サイト公開</text>
-<circle cx="350" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="350" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1993</text>
-<text x="350" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">img 登場 / 無償化</text>
-<circle cx="480" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="480" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">1990s</text>
-<text x="480" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">ブラウザ戦争</text>
-<circle cx="600" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="600" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2000</text>
-<text x="600" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">XHTML（→挫折）</text>
-<circle cx="710" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="710" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2014</text>
-<text x="710" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">HTML5</text>
-<circle cx="810" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="810" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">2019</text>
-<text x="810" y="108" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">標準を一本化</text>
-<circle cx="880" cy="130" r="7" fill="#3a6ea5" stroke="none" stroke-width="1"/>
-<text x="880" y="164" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a6ea5">now</text>
-<text x="880" y="182" text-anchor="middle" font-size="12" font-weight="normal" fill="#52606d">Living Standard</text>
+<rect x="30" y="30" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="135" y="74" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">1989</text>
+<text x="135" y="112" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">Web の提案</text>
+<line x1="242" y1="90" x2="256" y2="90" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="260" y="30" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="365" y="74" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">1990</text>
+<text x="365" y="112" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">最初の Web 実装</text>
+<line x1="472" y1="90" x2="486" y2="90" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="490" y="30" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="595" y="74" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">1993</text>
+<text x="595" y="112" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">img 提案・CERN の公開</text>
+<line x1="702" y1="90" x2="716" y2="90" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="720" y="30" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="825" y="74" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">2004</text>
+<text x="825" y="112" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">WHATWG 発足</text>
+<rect x="30" y="190" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="135" y="234" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">2009</text>
+<text x="135" y="272" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">XHTML 2 の開発終了へ</text>
+<line x1="242" y1="250" x2="256" y2="250" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="260" y="190" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="365" y="234" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">2014</text>
+<text x="365" y="272" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">W3C の HTML5 勧告</text>
+<line x1="472" y1="250" x2="486" y2="250" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="490" y="190" width="210" height="120" rx="12" fill="#eef1f5" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="595" y="234" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">2019</text>
+<text x="595" y="272" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">W3C・WHATWG 合意</text>
+<line x1="702" y1="250" x2="716" y2="250" stroke="#3a6ea5" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="720" y="190" width="210" height="120" rx="12" fill="#dce9f2" stroke="#b8c2cc" stroke-width="1.2"/>
+<text x="825" y="234" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a6ea5">現在</text>
+<text x="825" y="272" text-anchor="middle" font-size="13" font-weight="normal" fill="#1f2933">Living Standard</text>
+<text x="30" y="332" text-anchor="start" font-size="12" font-weight="normal" fill="#52606d">上段左から右、次に下段左から右へ</text>
 </svg>

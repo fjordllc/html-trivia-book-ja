@@ -70,7 +70,7 @@ def fig_4_1():
     W,H=920,300
     p=head(W,H,"html/head/body を書いていないソースから、ブラウザがそれらを補完した DOM の木を組み立てる流れの図")
     # source
-    p+=[txt(40,36,"あなたが書いたソース",15,SUB,weight="bold"),
+    p+=[txt(40,36,"ソースの抜粋（DOCTYPE・meta を省略表示）",12,SUB,weight="bold"),
         rect(40,48,300,120,"#fff",LINE,rx=12),
         txt(60,86,"<title>sample</title>",14,INK,mono=True),
         txt(60,116,"<p>Hello</p>",14,INK,mono=True),
@@ -78,7 +78,7 @@ def fig_4_1():
     # arrow
     p+=[ln(360,108,436,108,ACC,2.5,"ar"),txt(398,96,"解釈・補完",13,ACC,"middle","bold")]
     # DOM
-    p+=[txt(470,36,"ブラウザが作った DOM",15,SUB,weight="bold"),
+    p+=[txt(470,36,"DOM の抜粋（文書型・meta を省略表示）",12,SUB,weight="bold"),
         rect(470,48,410,242,"#fff",LINE,rx=12)]
     def node(x,y,s): return txt(x,y,s,14,ACC,"middle","bold",mono=True)
     p+=[node(660,92,"html"),
@@ -96,12 +96,12 @@ def fig_4_1():
 def fig_5_1():
     W,H=920,300
     p=head(W,H,"tbody を書いていない表のソースから、ブラウザが table と tr のあいだに tbody を補完した DOM を作る流れの図")
-    p+=[txt(40,36,"ソース（tbody なし）",15,SUB,weight="bold"),
+    p+=[txt(40,36,"ソース（tbody タグを省略）",15,SUB,weight="bold"),
         rect(40,48,300,120,"#fff",LINE,rx=12),
         txt(60,84,"<table>",14,INK,mono=True),
         txt(78,112,"<tr><td>A</td></tr>",14,INK,mono=True),
         txt(60,140,"</table>",14,INK,mono=True),
-        ln(360,108,436,108,ACC,2.5,"ar"),txt(398,96,"補完",13,ACC,"middle","bold")]
+        ln(360,108,436,108,ACC,2.5,"ar"),txt(398,96,"HTML パース",13,ACC,"middle","bold")]
     p+=[txt(470,36,"DOM",15,SUB,weight="bold"),
         rect(470,48,410,242,"#fff",LINE,rx=12)]
     def node(x,y,s,fill=ACC): return txt(x,y,s,14,fill,weight="bold",mono=True)
@@ -117,8 +117,8 @@ def fig_5_1():
 # ---------------------------------------------------------------- fig-6-1
 def fig_6_1():
     W,H=920,270
-    p=head(W,H,"p の中に div を書いたソースから、ブラウザが div の直前で p を閉じ、div を p の外に置いた DOM を作る流れの図")
-    p+=[txt(40,36,"ソース（p を閉じていない）",15,SUB,weight="bold"),
+    p=head(W,H,"p の終了タグを省略した HTML から、p と div が兄弟になる DOM を作る図")
+    p+=[txt(40,36,"ソース（p 終了タグを省略）",15,SUB,weight="bold"),
         rect(40,48,320,96,"#fff",LINE,rx=12),
         txt(58,88,"<p>前置き",14,INK,mono=True),
         txt(58,116,"<div>本文</div>",14,INK,mono=True),
@@ -129,66 +129,50 @@ def fig_6_1():
     p+=[node(520,92,"p"),ln(528,98,556,120,LINE,1.5),txt(556,126,'"前置き"',13,INK,mono=True),
         node(520,166,"div"),ln(534,172,562,190,LINE,1.5),txt(562,196,'"本文"',13,INK,mono=True),
         txt(660,92,"← p はここで閉じた",13,SUB),
-        txt(660,166,"← div は p の外へ",13,SUB)]
+        txt(660,166,"← div は p の兄弟",13,SUB)]
     save("fig-6-1.svg",p)
 
 # ---------------------------------------------------------------- fig-14-1
 def fig_14_1():
-    W,H=300+560,300
-    W=900
-    p=head(W,H,"同じ閉じ忘れの入力に対し、HTML は回復して文書を表示し、XML として扱う XHTML は処理を止めてエラー画面を出す対比の図")
-    # shared input
-    p+=[txt(40,50,"壊れた入力（閉じ忘れ）",15,INK,weight="bold"),
-        rect(40,62,230,60,"#fff",LINE,rx=10),
-        txt(56,98,"<p>前置き <div>本文",13,SUB,mono=True),
-        ln(280,92,326,92,SUB,2,"arg")]
-    # HTML column (望ましく動く側 = ACC/BLUE)
-    p+=[rect(350,62,250,200,BLUE,ACC,rx=14),
-        txt(475,96,"HTML",18,ACC,"middle","bold"),
-        txt(475,132,"回復して読み進める",15,INK,"middle","bold"),
-        txt(475,158,"div の手前で p を閉じる",13,SUB,"middle"),
-        txt(475,214,"○ 文書は表示される",15,ACC,"middle","bold"),
-        txt(475,240,"閲覧を止めない",13,SUB,"middle")]
-    # XML column (止まる側 = DANGER)
-    p+=[rect(630,62,250,200,DANGER_FILL,DANGER_ST,rx=14),
-        txt(755,96,"XHTML（XML）",18,DANGER,"middle","bold"),
-        txt(755,132,"不正なら処理を止める",15,INK,"middle","bold"),
-        txt(755,158,"回復しない",13,SUB,"middle"),
-        txt(755,214,"✕ ページが出ない",15,DANGER,"middle","bold"),
-        txt(755,240,"黄色いエラー画面",13,SUB,"middle")]
+    p=head(900,300,"HTML で適合する p の終了タグ省略が、XML では整形式の違反になる対比")
+    p += [txt(30,42,"本文断片（p 終了タグなし）",14,INK,weight="bold"),
+          rect(30,60,260,110,"#fff",LINE,rx=10),
+          txt(48,100,"<p>前置き",14,INK,mono=True),
+          txt(48,132,"<div>本文</div>",14,INK,mono=True),
+          txt(30,204,"XML の文書内では、",13,SUB),
+          txt(30,228,"後ろにも p の終了タグが必要",13,SUB)]
+    for x,title,lines,color,fill in [
+        (320,"HTML（text/html）",["この省略は適合","p と div は兄弟になる","通常のパースを続ける"],ACC,BLUE),
+        (610,"XHTML（XML）",["p が閉じられていない","整形式の違反になる","致命的なエラー"],DANGER,DANGER_FILL)]:
+        p += [rect(x,60,260,200,fill,color,rx=12),txt(x+130,98,title,17,color,"middle","bold")]
+        for i,line in enumerate(lines):p.append(txt(x+130,144+i*36,line,15,INK,"middle"))
     save("fig-14-1.svg",p)
 
 # ---------------------------------------------------------------- fig-21-1
 def fig_21_1():
-    W,H=940,250
-    p=head(W,H,"1989 年の提案から公開、img 登場と無償化、ブラウザ戦争、XHTML の挫折、HTML5、2019 年の標準一本化、現在の Living Standard までを並べた年表")
-    y=130
-    p+=[rect(40,30,860,190,"#fff",LINE,rx=14),ln(90,y,870,y,SUB,2)]
-    pts=[(110,"1989","提案書",1),(220,"1991","世界初サイト公開",-1),
-         (350,"1993","img 登場 / 無償化",1),(480,"1990s","ブラウザ戦争",-1),
-         (600,"2000","XHTML（→挫折）",1),(710,"2014","HTML5",-1),
-         (810,"2019","標準を一本化",1),(880,"now","Living Standard",-1)]
-    for x,yr,ev,side in pts:
-        p.append(circ(x,y,7,ACC))
-        yy=y-40 if side>0 else y+34
-        p+=[txt(x,yy,yr,15,ACC,"middle","bold"),txt(x,yy+18,ev,12,SUB,"middle")]
+    p=head(940,350,"1989 年の提案から 2019 年の合意と現在の Living Standard までの年表")
+    points=[("1989","Web の提案"),("1990","最初の Web 実装"),("1993","img 提案・CERN の公開"),("2004","WHATWG 発足"),
+            ("2009","XHTML 2 の開発終了へ"),("2014","W3C の HTML5 勧告"),("2019","W3C・WHATWG 合意"),("現在","Living Standard")]
+    for i,(year,event) in enumerate(points):
+        x=30+(i%4)*230;y=30+(i//4)*160
+        p += [rect(x,y,210,120,BLUE if i==7 else NEUT,LINE,rx=12),
+              txt(x+105,y+44,year,22,ACC,"middle","bold"),txt(x+105,y+82,event,13,INK,"middle")]
+        if i%4!=3:p.append(ln(x+212,y+60,x+226,y+60,ACC,1.5,"ar"))
+    p.append(txt(30,332,"上段左から右、次に下段左から右へ",12,SUB))
     save("fig-21-1.svg",p)
 
 # ---------------------------------------------------------------- fig-24-1
 def fig_24_1():
-    W,H=920,320
-    p=head(W,H,"1 つの HTML 文書を、ブラウザ・検索エンジン・スクリーンリーダー・SNS のカード生成・翻訳や保存ツールがそれぞれ構造から読む様子の図")
-    p+=[rect(40,100,220,120,BLUE,ACC,rx=14),
-        txt(150,150,"HTML 文書",18,ACC,"middle","bold"),
-        txt(150,178,"構造・意味の手がかり",13,SUB,"middle")]
-    readers=["ブラウザ（画面に表示）","検索エンジン（主題を推定）",
-             "スクリーンリーダー（読み上げ）","SNS（カードを生成）",
-             "翻訳・保存・リーダーモード"]
-    for i,r in enumerate(readers):
-        ry=54+i*52
-        p+=[ln(268,160,556,ry+20,ACC,1.6,"ar"),
-            rect(570,ry,310,40,NEUT,LINE,rx=10),
-            txt(588,ry+26,r,15,INK)]
+    p=head(920,350,"HTML からブラウザとアクセシビリティ情報を介して支援技術へ届く経路と、サービスが取得する経路")
+    p += [rect(30,120,180,90,BLUE,ACC,rx=12),txt(120,173,"HTML 文書",20,ACC,"middle","bold"),
+          ln(220,145,290,75,ACC,2,"ar"),rect(300,40,240,85,NEUT,LINE,rx=12),
+          txt(420,75,"ブラウザ",18,INK,"middle","bold"),txt(420,102,"DOM・表示・情報の提供",13,SUB,"middle"),
+          ln(550,82,635,82,ACC,2,"ar"),txt(592,48,"アクセシビリティ",11,SUB,"middle"),txt(592,64,"情報",11,SUB,"middle"),
+          rect(650,40,240,85,NEUT,LINE,rx=12),txt(770,75,"支援技術",18,INK,"middle","bold"),txt(770,102,"読み上げ・移動・操作",13,SUB,"middle"),
+          ln(220,180,290,240,ACC,2,"ar"),rect(300,180,590,130,NEUT,LINE,rx=12),
+          txt(325,215,"HTML を取得するサービスやツール",17,INK,weight="bold"),
+          txt(325,248,"検索・保存・翻訳：本文や構造を利用",15,SUB),
+          txt(325,279,"カード生成：メタデータを参照する場合もある",15,SUB)]
     save("fig-24-1.svg",p)
 
 # ---------------------------------------------------------------- fig-d-1

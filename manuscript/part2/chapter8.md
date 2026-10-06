@@ -1,8 +1,6 @@
 # 第8章 View Source と DevTools はなぜ違うのか
 
-この章では、View Source と DevTools が同じ HTML を別の形で見せているのではなく、最初から別の対象を見せているのだと整理します。ゴールは、ソースと DOM が食い違って見えたときに、「どちらが正しいか」と迷うのではなく、「どの段階の結果を見ているのか」を切り分けて説明できるようになることです。
-
-前章では、HTML が壊れた入力に出会っても、閲覧を止めずに回復しながら読み進めることを見ました。この章では、その回復の前と後を、私たちがどこで観察しているのかを扱います。次の第3部では、こうした差を生む HTML 自体の設計思想へ進みます。
+View Source と DevTools が同じ HTML を別の形で見せているのではなく、最初から別の対象を見せているのだと整理します。
 
 ## 8.1 同じ文書でも観察している層が違う
 
@@ -10,11 +8,11 @@ View Source が見せるのは、ネットワークから受け取った元の H
 
 一方で DevTools の Elements パネルが見せるのは、ブラウザがその入力をパースし、必要な補完や回復を行ったあとに扱っている DOM です。Elements パネルは、ブラウザがいま相手にしている要素の木を表示する画面だと思えば十分です。ここで見えているのは、文字列そのものではなく、ブラウザ内部で組み立てられた文書構造です。
 
-この 2 つは、同じページに由来していても観察対象が違います。だから一致しないこと自体は異常ではありません。むしろ、第4章から第7章までで見てきた補完や暗黙終了や回復がある以上、違いが見えるほうが自然です。
+この 2 つは、同じページに由来していても観察対象が違います。だから一致しないこと自体は異常ではありません。むしろ、[第4章](chapter4.md)から[第7章](chapter7.md)までで見てきた補完や暗黙終了や回復がある以上、違いが見えるほうが自然です。
 
 ## 8.2 `tbody` と `p` が差を目に見える形へ変える
 
-もっとも分かりやすいのは、第5章と第6章で扱った例です。
+もっとも分かりやすいのは、[第5章](chapter5.md)と[第6章](chapter6.md)で扱った例です。
 
 ```html
 <table>
@@ -24,9 +22,9 @@ View Source が見せるのは、ネットワークから受け取った元の H
 <div>本文</div>
 ```
 
-View Source では、この入力はほぼそのまま見えます。`tbody` は書かれておらず、`p` も閉じられていません。
+View Source では、この入力はほぼそのまま見えます。`tbody` は書かれておらず、p の終了タグも省略されています。この例の省略は適合する書き方です。
 
-しかし DevTools では違います。表には `tbody` が立ち上がり、`div` の手前で `p` が閉じられた形の DOM が見えます。ここで起きているのは、ブラウザが勝手に別の文書を作っていることではありません。元の入力を、表モデルや段落構造を保ったまま扱える形へ変換した結果が、DOM として現れているのです。
+しかし DevTools では違います。表には `tbody` が立ち上がり、`div` の手前で `p` が閉じられた形の DOM が見えます。ここで起きているのは、ブラウザが勝手に別の文書を作っていることではありません。元の入力を HTML のパース規則に従って読み取った結果が、DOM として現れています。
 
 この差を知らないと、「ソースを書き換えられた」「DevTools が嘘を表示している」といった誤解が起きます。実際には、View Source は入力を、DevTools は解釈結果を見せています。両者の不一致は、ブラウザが不安定だからではなく、役割が違うから起きます。
 
@@ -36,9 +34,9 @@ View Source では、この入力はほぼそのまま見えます。`tbody` は
 
 たとえば、テンプレートエンジンがどんな HTML を出力したのか、レスポンスに含まれていた属性や要素は何か、整形前の改行やコメントがどう入っていたのか、といったことは View Source のほうが向いています。これは「ブラウザがどう理解したか」ではなく、「そもそも何が渡されたか」を見るための道具です。
 
-ここで 1 つ区別しておきたいのは、View Source が見せるのは ERB や JSX のようなテンプレート記述そのものではない、ということです。見えているのは、それらが評価されたあとにサーバーやビルド結果から渡された HTML です。Rails アプリで調べものをするときも、`app/views` のテンプレートと View Source と DevTools は、それぞれ別の段階を見ています。
+ERB をサーバーで評価した場合、View Source には生成された HTML が見え、ERB 自体は見えません。React の JSX はもう一段区別が必要です。サーバーで HTML を生成して送ればその内容が見えますが、ブラウザで createRoot などを使って作る DOM は、最初の HTML に含まれるとは限りません。View Source に空の容器しかなくても、Elements パネルにはスクリプトで追加された内容が現れます。
 
-第7章で触れた validator との相性がよいのもこちらです。validator が検査するのは入力としての HTML なので、確認したい対象は回復前の文字列です。著者の入力に問題があるのかを詰めるなら、まず見るべきなのは View Source 側です。
+[第7章](chapter7.md)で触れた validator との相性がよいのもこちらです。validator が検査するのは入力としての HTML なので、確認したい対象は回復前の文字列です。著者の入力に問題があるのかを詰めるなら、まず見るべきなのは View Source 側です。
 
 ## 8.4 DevTools はブラウザの現実を調べる道具である
 
@@ -63,3 +61,6 @@ View Source では、この入力はほぼそのまま見えます。`tbody` は
 * [HTML Living Standard: Parsing HTML documents](https://html.spec.whatwg.org/multipage/parsing.html)
 * [HTML Living Standard: The `body` element](https://html.spec.whatwg.org/multipage/sections.html#the-body-element)
 * [Chrome Developers: View and change the page's DOM](https://developer.chrome.com/docs/devtools/dom/)
+
+* [React: createRoot](https://react.dev/reference/react-dom/client/createRoot)
+* [React: renderToString](https://react.dev/reference/react-dom/server/renderToString)
